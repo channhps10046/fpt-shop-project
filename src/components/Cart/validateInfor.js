@@ -33,7 +33,7 @@ export default function validateInfor(username, phoneNumber, email) {
 
     if(!phoneNumber){
         errors.phoneNumber = "Bạn cần phải nhập số điện thoại";
-    } else if(vnf_regex.test(phoneNumber) == false){
+    } else if(vnf_regex.test(phoneNumber) === false){
         errors.phoneNumber = "số điện thoại của bạn không đúng định dạng";
     } else {
         errors.phoneNumber = "";

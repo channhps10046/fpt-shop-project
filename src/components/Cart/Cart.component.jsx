@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import CartItem from '../CartItem/cart-item.component';
 import "./cart.styles.scss";
+import "./cart-responsive.styles.scss";
 import { createStructuredSelector } from 'reselect';
 import { selectCartItems, selectCartTotal } from '../../redux/cart/cart.selectors';
 import validate from './validateInfor';
@@ -111,7 +112,7 @@ const Cart = ({ cartItems, total }) => {
               </div>
               <div className="cart-paypal">
                 {
-                  (toggle == true) ? (<button type="submit" className="cart-paypal__button">
+                  (toggle === true) ? (<button type="submit" className="cart-paypal__button">
                 <div className="group-title-paypal">
                   <span className="ftitle"> đặt hàng luôn</span>
                   <span className="ltitle">FPT sẽ gọi cho quý khách</span>

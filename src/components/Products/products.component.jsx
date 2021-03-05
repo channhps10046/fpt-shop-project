@@ -6,6 +6,7 @@ import Slider from '../../pages/Slider/slider.componet';
 import Filter from '../Filter/filter-products.component';
 import ProductList from '../ProductList/product-list.component';
 import "./products.styles.scss";
+import "./products-responsive.styles.scss";
 
 const Products = () => {
   useEffect(() => {

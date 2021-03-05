@@ -7,7 +7,7 @@ const CartItem = ({item, addItem, removeItem, clearItem }) => {
   const fotmatter =  new Intl.NumberFormat('vn', { style: 'currency', currency: 'vnd' });
     return (
         <React.Fragment>
-            <tr>
+            <tr className="tr-mobile">
                   <td>
                     <div className="img_cart">
                       <img src={image} alt="imageCart" />
