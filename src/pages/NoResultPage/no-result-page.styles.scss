@@ -1,0 +1,22 @@
+.group-page {
+  width: 100%;
+  background: white;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+
+  .page {
+    text-align: center;
+    width: 55%;
+
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      line-height: 25px;
+    }
+  }
+}

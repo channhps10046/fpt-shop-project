@@ -1,0 +1,226 @@
+// Mobile & tablet
+@media (max-width: 1024px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .container {
+    width: initial;
+    max-width: 1023px;
+  }
+  .header {
+    &__group {
+      .form__search {
+        margin-right: 0;
+        &--control {
+          width: 500px;
+          height: 40px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            padding: 5px;
+          }
+        }
+        &--button {
+          cursor: pointer;
+          height: 40px;
+          width: 60px;
+          margin-left: -5px;
+          background-color: #333;
+          outline: none;
+          border: none;
+
+          i {
+            color: white;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+// Tablet
+@media (min-width: 740px) and (max-width: 1024px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .container {
+    width: initial;
+    min-width: 740px;
+  }
+  .header {
+    &__group {
+      .form__search {
+        margin-right: 0;
+        &--control {
+          width: 250px;
+          height: 40px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            padding: 5px;
+          }
+        }
+        &--button {
+          cursor: pointer;
+          height: 40px;
+          width: 60px;
+          margin-left: -5px;
+          background-color: #333;
+          outline: none;
+          border: none;
+
+          i {
+            color: white;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+//Mobile
+@media (max-width: 740px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .container {
+    width: initial;
+    min-width: 739px;
+  }
+  .header {
+    &__group {
+      .form__search {
+        margin-right: 0;
+        &--control {
+          width: 250px;
+          height: 40px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            padding: 5px;
+          }
+        }
+        &--button {
+          cursor: pointer;
+          height: 40px;
+          width: 60px;
+          margin-left: -5px;
+          background-color: #333;
+          outline: none;
+          border: none;
+
+          i {
+            color: white;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .container {
+    width: initial;
+    min-width: 320px;
+    max-width: 479px;
+  }
+  .header {
+    &__group {
+      flex-direction: column;
+
+      .logo {
+        margin-bottom: 10px;
+      }
+      .form__search {
+        margin-right: 0;
+        display: flex;
+        margin-bottom: 10px;
+        &--control {
+          width: 185px;
+          height: 40px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            padding: 5px;
+          }
+        }
+        &--button {
+          cursor: pointer;
+          height: 40px;
+          width: 60px;
+          margin-left: -5px;
+          background-color: #333;
+          outline: none;
+          border: none;
+
+          i {
+            color: white;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: initial;
+    max-width: 600px;
+  }
+
+  .header {
+    &__group {
+      .logo {
+        margin-bottom: 10px;
+      }
+      .form__search {
+        margin-right: 0;
+        display: flex;
+        margin-bottom: 10px;
+        &--control {
+          width: 185px;
+          height: 40px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            padding: 5px;
+          }
+        }
+        &--button {
+          cursor: pointer;
+          height: 40px;
+          width: 60px;
+          margin-left: -5px;
+          background-color: #333;
+          outline: none;
+          border: none;
+
+          i {
+            color: white;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

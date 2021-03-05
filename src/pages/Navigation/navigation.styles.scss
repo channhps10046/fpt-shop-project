@@ -1,0 +1,36 @@
+.navigation {
+  background-color: var(--Black);
+  z-index: 5;
+  position: inherit;
+
+  .navigation-group {
+    display: flex;
+    padding: 10px 0;
+
+    li {
+      margin-right: 30px;
+      list-style-type: none;
+
+      i {
+        color: var(--white);
+        margin-right: 10px;
+        font-size: 24px;
+        vertical-align: middle;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 14px;
+        vertical-align: middle;
+        transition: 0.5s;
+        text-transform: uppercase;
+
+        &:hover {
+          color: grey;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}

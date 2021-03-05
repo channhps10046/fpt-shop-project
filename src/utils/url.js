@@ -1,0 +1,1 @@
+export default "https://react-fpt-api.herokuapp.com";

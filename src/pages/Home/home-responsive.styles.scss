@@ -1,0 +1,415 @@
+// Mobile & tablet
+@media (max-width: 1024px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .container {
+    width: initial;
+    max-width: 1023px;
+  }
+  .brand__product {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+    z-index: 5;
+    border-radius: 6px;
+
+    .brand {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      padding: 2px;
+
+      a {
+        width: 255px;
+      }
+    }
+  }
+}
+// Tablet
+@media (min-width: 739px) and (max-width: 1024px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .container {
+    width: initial;
+    min-width: 739px;
+    max-width: 1023px;
+  }
+
+  .featured-phone {
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    background-color: var(--white);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    &__title {
+      padding: 20px;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    .featured--group {
+      display: flex;
+      justify-content: initial;
+      flex-wrap: wrap;
+    }
+
+    .cdt {
+      display: block;
+    }
+
+    .cdt-product {
+      cursor: pointer;
+      background-color: var(--white);
+      padding: 20px;
+      width: calc(100% / 3);
+      border: none;
+      transition: all 1s;
+      &:hover {
+        border-radius: 6px;
+        border: solid 1px #dee2e6;
+        transition: all 1s;
+        box-shadow: 0 0 2px 0 #dee2e6;
+
+        .cdt-btn__group {
+          visibility: visible;
+          transition: all 1s;
+        }
+      }
+
+      &__img {
+        text-align: center;
+
+        img {
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+          }
+        }
+      }
+
+      &__info {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font-weight: 400;
+        vertical-align: baseline;
+        background: 0 0;
+
+        &--title {
+          margin-top: 20px;
+          margin-bottom: 8px;
+          font-size: 17px;
+          font-weight: 700;
+          color: #474c51;
+        }
+
+        &--price {
+          margin-bottom: 8px;
+          flex-basis: 130px;
+          width: 130px;
+          height: 28px;
+          border-radius: 15px;
+          background-color: var(--Red);
+          text-align: center;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 500;
+          overflow: hidden;
+          position: relative;
+          z-index: 1;
+          color: #fff;
+        }
+
+        .group-config {
+          background: #f8f9fa;
+          padding: 9px 10px 0;
+          border-radius: 6px;
+          position: relative;
+          &__mobile {
+            i {
+              font-size: 19px;
+            }
+          }
+
+          .para {
+            color: #6c757d;
+          }
+
+          &__pc {
+            margin-top: 10px;
+            display: block;
+          }
+        }
+      }
+      .icon__mobile {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+//Mobile
+@media (max-width: 740px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .container {
+    width: initial;
+    min-width: 739px;
+  }
+
+  .featured-phone {
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    background-color: var(--white);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    &__title {
+      padding: 20px;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    .featured--group {
+      display: flex;
+      justify-content: initial;
+      flex-wrap: wrap;
+    }
+
+    .cdt {
+      display: block;
+    }
+
+    .cdt-product {
+      cursor: pointer;
+      background-color: var(--white);
+      padding: 20px;
+      width: calc(100% / 2);
+      border: none;
+      transition: all 1s;
+      &:hover {
+        border-radius: 6px;
+        border: solid 1px #dee2e6;
+        transition: all 1s;
+        box-shadow: 0 0 2px 0 #dee2e6;
+
+        .cdt-btn__group {
+          visibility: visible;
+          transition: all 1s;
+        }
+      }
+
+      &__img {
+        text-align: center;
+
+        img {
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+          }
+        }
+      }
+
+      &__info {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font-weight: 400;
+        vertical-align: baseline;
+        background: 0 0;
+
+        &--title {
+          margin-top: 20px;
+          margin-bottom: 8px;
+          font-size: 17px;
+          font-weight: 700;
+          color: #474c51;
+        }
+
+        &--price {
+          margin-bottom: 8px;
+          flex-basis: 130px;
+          width: 130px;
+          height: 28px;
+          border-radius: 15px;
+          background-color: var(--Red);
+          text-align: center;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 500;
+          overflow: hidden;
+          position: relative;
+          z-index: 1;
+          color: #fff;
+        }
+
+        .group-config {
+          background: #f8f9fa;
+          padding: 9px 10px 0;
+          border-radius: 6px;
+          position: relative;
+          &__mobile {
+            i {
+              font-size: 19px;
+            }
+          }
+
+          .para {
+            color: #6c757d;
+          }
+
+          &__pc {
+            margin-top: 10px;
+            display: block;
+          }
+        }
+      }
+      .icon__mobile {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .container {
+    width: initial;
+    min-width: 320px;
+    max-width: 479px;
+  }
+  .featured-phone {
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    background-color: var(--white);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    &__title {
+      padding: 20px;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    .featured--group {
+      display: flex;
+      justify-content: initial;
+      flex-wrap: wrap;
+    }
+
+    .cdt {
+      display: block;
+    }
+
+    .cdt-product {
+      cursor: pointer;
+      background-color: var(--white);
+      padding: 20px;
+      width: calc(100% / 1);
+      border: none;
+      transition: all 1s;
+      border-bottom: 1px solid gray;
+      &:hover {
+        border-radius: 6px;
+        border: solid 1px #dee2e6;
+        transition: all 1s;
+        box-shadow: 0 0 2px 0 #dee2e6;
+
+        .cdt-btn__group {
+          visibility: visible;
+          transition: all 1s;
+        }
+      }
+
+      &__img {
+        text-align: center;
+
+        img {
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+          }
+        }
+      }
+
+      &__info {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font-weight: 400;
+        vertical-align: baseline;
+        background: 0 0;
+
+        &--title {
+          margin-top: 20px;
+          margin-bottom: 8px;
+          font-size: 17px;
+          font-weight: 700;
+          color: #474c51;
+        }
+
+        &--price {
+          margin-bottom: 8px;
+          flex-basis: 130px;
+          width: 130px;
+          height: 28px;
+          border-radius: 15px;
+          background-color: var(--Red);
+          text-align: center;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 500;
+          overflow: hidden;
+          position: relative;
+          z-index: 1;
+          color: #fff;
+        }
+
+        .group-config {
+          background: #f8f9fa;
+          padding: 9px 10px 0;
+          border-radius: 6px;
+          position: relative;
+          &__mobile {
+            i {
+              font-size: 19px;
+            }
+          }
+
+          .para {
+            color: #6c757d;
+          }
+
+          &__pc {
+            margin-top: 10px;
+            display: block;
+          }
+        }
+      }
+      .icon__mobile {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.sale-cd-timer {
+  font-family: inherit;
+  text-shadow: unset;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  margin-top: 20px;
+
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 16px;
+
+    li {
+      margin-right: 16px;
+      list-style: none;
+
+      .cd-box {
+        font-weight: 400;
+        font-size: 14px;
+        color: #444b52;
+        display: inline-block;
+        width: 57px;
+        height: 54px;
+        background: #fff;
+        // -webkit-box-shadow: 0 1px 0 rgb(0 0 0 / 30%);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        padding: 2px;
+
+        .cd-timer {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 32px;
+          text-align: center;
+          color: #cb1c22;
+          margin-bottom: -2px;
+        }
+      }
+    }
+  }
+}

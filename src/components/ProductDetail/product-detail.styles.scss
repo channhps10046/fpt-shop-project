@@ -1,0 +1,124 @@
+.group_details {
+  background: var(--main);
+}
+
+.detail-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  //   margin-bottom: 16px;
+  -webkit-box-shadow: inset 0 -1px 0 0 #dee2e6;
+  box-shadow: inset 0 -1px 0 0 #dee2e6;
+  min-height: 57px;
+  font-size: 20px;
+}
+
+.detail_group {
+  display: flex;
+  background: var(--white);
+  padding: 15px;
+  justify-content: space-between;
+}
+.detail-left {
+  width: calc(50% - 15px);
+  text-align: center;
+  img {
+    width: 55%;
+  }
+}
+
+.detail-right {
+  width: calc(50% - 15px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+
+  &__price {
+    font-weight: 500;
+    color: #cb1c22;
+    margin-right: 10px;
+    font-size: 30px;
+  }
+
+  .group-config {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: solid 1px #e9ecef;
+    background-color: #f8f9fa;
+    margin-bottom: 13px;
+    margin-top: 40px;
+    &__mobile {
+      display: block;
+      i {
+        font-size: 30px;
+        margin-right: 10px;
+      }
+    }
+
+    .para {
+      color: #6c757d;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      img {
+        margin-right: 10px;
+        text-align: center;
+      }
+    }
+
+    &__pc {
+      margin-top: 10px;
+      display: block;
+    }
+  }
+
+  .icon__mobile {
+    width: 24px;
+    height: 24px;
+  }
+
+  .detail-button {
+    overflow: hidden;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-radius: 6px;
+
+    button {
+      cursor: pointer;
+      width: 100%;
+      padding: 12px 32px;
+      font-size: 18px;
+      line-height: 14px;
+      background: #cb1c22;
+      border: none;
+      color: white;
+
+      p {
+        margin-top: 7px;
+        font-size: 13px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+.related-products {
+  overflow: hidden;
+  background: var(--main);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

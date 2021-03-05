@@ -3,11 +3,30 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from "react-router-dom";
+import { ProductProvider } from './context/products';
+import { Provider } from 'react-redux';
+import { store, persistor } from './redux/store';
+import { CategoryProvider } from './context/category';
+import { BrandProvider } from './context/brand';
+import { PersistGate } from 'redux-persist/integration/react';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <PersistGate persistor={persistor}>
+      <BrandProvider>
+        <CategoryProvider>
+          <Router>
+            <React.StrictMode>
+              <ProductProvider>
+                <App />
+              </ProductProvider>
+            </React.StrictMode>
+          </Router>
+        </CategoryProvider>
+      </BrandProvider>
+    </PersistGate>
+  </Provider>,
   document.getElementById('root')
 );
 

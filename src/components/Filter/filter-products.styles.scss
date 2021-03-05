@@ -1,0 +1,31 @@
+.form-search-item {
+  &__search {
+    border-radius: 4px;
+    border: none;
+    outline: orange;
+    height: 20px;
+
+    &:focus {
+      outline: tan;
+      border: orange;
+    }
+  }
+}
+
+.select_group {
+  &__select {
+    border-radius: 4px;
+    border: none;
+    outline: none;
+  }
+}
+
+.checkbox-group {
+  span {
+    margin-left: 10px;
+  }
+}
+
+.frm {
+  margin-bottom: 15px;
+}

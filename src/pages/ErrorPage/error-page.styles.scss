@@ -1,0 +1,43 @@
+.error-page {
+  width: 100%;
+  background-color: white;
+  padding: 60px 0px;
+}
+
+.group-page {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__logo {
+    margin-bottom: 60px;
+  }
+
+  h1 {
+    font-size: 22px;
+    color: #d0011b;
+    margin: 30px 0 15px;
+    font-weight: bold;
+  }
+
+  &__group-button {
+    margin-top: 40px;
+
+    &--btn-danger {
+      display: inline-block;
+      width: 241px;
+      height: 50px;
+      border-radius: 2px;
+      color: #307f0f;
+      border: solid 1px #34a105;
+      text-align: center;
+      line-height: 50px;
+      -webkit-border-radius: 2px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
