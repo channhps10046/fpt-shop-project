@@ -1,5 +1,3 @@
-import url from '../utils/url';
-
 export function flattenProducts(data){
     return data.map(item => {
         let image = item.image[0].url;
