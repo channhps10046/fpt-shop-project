@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { ProductContext } from '../../context/products';
 import Slider from '../../pages/Slider/slider.componet';
 import ProductList from '../ProductList/product-list.component';
+import NoResult from '../../pages/NoResultPage/no-result-page.component';
 
 const BrandProducts = () => {
   useEffect(() => {
@@ -61,9 +62,11 @@ const BrandProducts = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-9">
+              {
+                !brandProducts.lenght ? (<NoResult/>) : ( <div className="col-9">
                 <ProductList title="TỔNG HỢP SẢN PHẨM" products={brandProducts}/>
-              </div>
+              </div>)
+              }
             </div>
           </div>
         </div>

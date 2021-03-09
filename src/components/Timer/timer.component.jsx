@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./timer.styles.scss";
 
 const Timer = () => {
@@ -8,7 +8,7 @@ const Timer = () => {
     const [timerMinutes, setTimerMinutes] = useState('00');
     const [timerSeconds, setTimerSeconds] = useState('00');
 
-    let interval = useRef();
+    let interval = null;
 
     const startTimer = () => {
         const countdownDate = new Date('May 14, 2021 00:00:00').getTime();
@@ -22,7 +22,7 @@ const Timer = () => {
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             if(distance < 0){
-                clearInterval(interval.current);
+                clearInterval(interval);
             } else {
                 setTimerDays(days);
                 setTimerHours(hours);
@@ -35,10 +35,10 @@ const Timer = () => {
     useEffect(() => {
         startTimer();
         
-        // return () => {
-        //     clearInterval(interval.current);
-        // };
-    },[])
+        return () => {
+            clearInterval(interval);
+        };
+    })
 
     return (
         <div className="sale-cd-timer">

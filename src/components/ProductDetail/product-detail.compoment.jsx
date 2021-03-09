@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ProductContext } from '../../context/products';
 import "./product-detail.styles.scss";
+import "./product-detail.-responsive.styles.scss";
 import cpuTower from '../../assets/cpu-tower.png';
 import Memorys from '../../assets/memory.png';
 import processor from '../../assets/processor.png';

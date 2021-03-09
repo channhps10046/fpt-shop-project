@@ -4,6 +4,7 @@ import "./header.styles.scss";
 import "./header-responsive.styles.scss";
 import { selectCartItemCount } from '../../redux/cart/cart.selectors';
 import { connect } from 'react-redux';
+import Logo from '../../assets/logo-ft.png';
 // import { ProductContext } from '../../context/products';
 
 const Header = ({ itemCount }) => {
@@ -27,7 +28,7 @@ const Header = ({ itemCount }) => {
         <div className="container">
           <div className="header__group">
             <span className="logo">
-              <Link to="/"><img className="logo__image" src="img/logo-ft.png" alt="Logo" /></Link>
+              <Link to="/"><img className="logo__image" src={Logo} alt="Logo" /></Link>
               <h2 className="logo__title">Shop<span className="logo__title--doumain">.com.vn</span></h2>
             </span>
             <form onSubmit={handleSubmit}>
